@@ -25,7 +25,7 @@ cd ~/.ssh
 ```
 cat id_ed32424.pub
 ```
-6. Hasil output dari cat tersebut silakan copy dan paste pada (link berikut https://github.com/settings/ssh/new)[https://github.com/settings/ssh/new]
+6. Hasil output dari cat tersebut silakan copy dan paste pada (link berikut)[https://github.com/settings/ssh/new]
 7. cek status koneksi
 ```
 ssh -T git@github.com
