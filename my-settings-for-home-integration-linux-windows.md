@@ -32,7 +32,7 @@ Daftar Partisi:
    - Perhatikan string **/mnt/D** ini merupakan cara kita merefer dimana kita akan membacanya pada linux, diperlukan ketika membuat link nanti
    - Simpan file yang sudah ditambahkan baris tersebut
 
-3. Buat links antara linux dengan window
+3. Buat symlinks antara linux dengan window
    - Contoh pada folder Downloads
    - hapus folder Downloads default pada home linux
      ```
@@ -41,4 +41,8 @@ Daftar Partisi:
    - buat links dengan partisi D tadi
      ```
      ln -s /mnt/D/Downloads ~/Downloads
+     ```
+     atau bila sudah ada di partisi yg diinginkan sebagai contoh kita sudah di home, dan ingin menambahkan symlinks Downloads pada home
+     ```
+     ln -s /mnt/D/Downloads
      ```
