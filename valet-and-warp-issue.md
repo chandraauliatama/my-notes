@@ -47,3 +47,20 @@ So, to make my life easier when setup this again here I am writing this note.
 
     composer global require genesisweb/valet-linux-plus
     ```
+
+
+# 22 July 2024: Encounter Similar Issue, Can't Connect to Internet If WARP not enabled.
+
+## How to fix:
+1. Open wifi settings.
+2. See connected network information
+3. See default route, example 192.168.0.1
+4. Open terminal
+   ```
+   sudo nano /etc/resolv.conf
+   ```
+5. add ip route to your resolv.conf file. Example
+   ```
+   nameserver 192.168.0.1
+   ```
+6. Internet will be work just fine.
